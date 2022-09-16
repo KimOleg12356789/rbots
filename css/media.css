@@ -1,0 +1,275 @@
+
+
+@media screen and (max-width: 1366px) {
+	
+}
+
+
+@media screen and (max-width: 1300px) {
+	
+}
+
+@media screen and (max-width: 1250px){
+	
+}
+
+
+/* стили для md-устройств */
+@media screen and (max-width: 1200px) {
+	
+}	
+
+
+@media screen and (max-width: 1050px) {
+	
+
+  
+}
+
+
+/* стили для sm-устройств */
+@media screen and (max-width: 1024px) {
+	.modalActive3 {
+		max-width: 100%;
+		height: 100vh;
+	}
+
+	.modal-inner-block {
+		width: 100%;
+		padding: 0;
+	}
+
+	.modal-inner-block2 {
+		width: 100%;
+		padding: 0;
+	}
+
+	.modal-inner-title {
+		display: none;
+	}
+
+	.modal-valet {
+		height: auto;
+		
+	}
+  
+}
+
+/* стили для sm-устройств */
+@media screen and (max-width: 992px) {
+	.forms-block {
+	    width: 42%;
+	}
+
+	.forms-block2 {
+	    width: 5%;
+	    padding: 0 10px 6px 10px;
+	}
+
+	.forms-block3 {
+	    margin: 0 0 -2px 0;
+	    width: 11%;
+	    padding: 0 0 0 10px;
+	}
+}
+
+
+@media screen and (max-width: 900px) {
+	
+
+
+}
+
+
+/* Ipad*/ 
+@media screen and (max-width: 768px) {
+	
+	.header-li {
+	    padding: 0 15px;
+	}
+
+	.forms-block {
+	    width: 40%;
+	}
+
+	.forms-block2 {
+	    width: 7%;
+	    padding: 0 10px 6px 10px;
+	}
+
+	.forms-block3 {
+	    margin: 0 0 -2px 0;
+	    width: 13%;
+	    padding: 0 0 0 10px;
+	}
+
+	.tables-tables {
+		display: none;
+	}
+
+	.tables-accordion {
+		display: block;
+		padding: 40px 0 0 0;
+	}
+
+	.container {
+		padding: 0 20px;
+	}
+
+	.modal {
+		max-width: 100%;
+		height: 100vh;
+	}
+
+	.modal2 {
+		max-width: 100%;
+		height: 100vh;
+	}
+
+	.modal-wrap-block {
+		width: 100%;
+		padding: 0;
+	}
+
+}
+
+
+/* Ipad mini*/ 
+@media screen and (max-width: 640px) {
+	/*Burger*/
+
+  .burger {
+    display: block !important;
+  }
+
+  .mt-munu-mb .header-navigation-wr {
+    display: block !important;
+  }
+
+  .header-nav {
+  	display: none;
+  }
+
+  .header-link {
+  	display: none;
+  }
+
+  	.forms-block {
+    	width: 39%;
+	}
+
+	.forms-block2 {
+	    width: 8%;
+	    padding: 0 10px 6px 10px;
+	}
+
+	.forms-block3 {
+	    margin: 0 0 -2px 0;
+	    width: 14%;
+	    padding: 0 0 0 10px;
+	}
+
+	.forms-buttons {
+		overflow: auto;
+		white-space: nowrap;
+	}
+
+	.forms-buttons::-webkit-scrollbar {
+	  width: 0;
+	  height: 0;
+	}
+}
+
+@media screen and (max-width: 575px) {
+  	
+}
+
+/* Galaxy S8+*/ 
+@media screen and (max-width: 480px) {
+  	.forms {
+  		padding: 40px 0 0 0;
+  	}
+
+  	.forms-wrap {
+  		position: relative;
+  		flex-wrap: wrap;
+  	}
+
+  	.forms-block {
+  		width: 100%;
+  		padding: 10px 0;
+  	}
+
+  	.forms-block2 {
+  		padding: 0;
+  	}
+
+  	.forms-button-arrow {
+  		transform: rotate(90deg);
+  		right: 0;
+  		top: 97px;
+  		position: absolute;
+  	}
+
+  	.forms-button-search button img {
+  		display: none;
+  	}
+
+  	.forms-button-search button span {
+  		display: block;
+  		font-size: 13px;
+  		line-height: 34px;
+  		color: #fff;
+  		font-family: 'Gotham-Book';
+  	}
+
+  	.forms-block3 {
+  		width: 100%;
+  		margin: 0;
+  		padding: 20px 0 0 0;
+  	}
+
+  	.forms-inner {
+  		padding: 20px 0 30px 0;
+  	}
+
+  	.tables-title {
+  		font-size: 45px;
+  	}
+
+  	.tables {
+  		padding: 40px 0 40px 0;
+  	}
+
+  	.tables-accordion {
+  		padding: 10px 0 0 0;
+  	}
+
+  	.fag {
+  		padding: 0 0 40px 0;
+  	}
+
+  	.footer-title {
+  		display: none;
+  	}
+
+  	.accordion .text {
+  		font-size: 16px;
+  	}
+}
+
+/* Galaxy*/ 
+@media screen and (max-width: 415px) {
+  	
+}
+
+
+/* Iphone 6.7.8 */ 
+@media screen and (max-width: 375px) {
+	
+}
+
+/* Iphone 5.5SE */ 
+@media screen and (max-width: 320px) {
+	
+}

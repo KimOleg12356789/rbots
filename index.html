@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- CSS -->
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link href="slick/slick.css" rel="stylesheet">
+    <link href="slick/slick-theme.css" rel="stylesheet">
+  </head>
+
+  
+  <body>
+
+    <div class="backdrop"></div>
+    <div class="backdrop2"></div>
+    <div class="backdrop3"></div>
+
+
+    <nav class="mt-mobile nav-open">
+          <div class="container">
+            <div class="mt-munu-mb">
+              
+        <div class="header-navigation-wr">
+          <div class="header-navigation">
+            <ul class="burger-ul" id="menu2">
+              <li class="burger-li">
+                <a href="">
+                  Мониторинг предложений
+                </a>
+              </li>
+              <li class="burger-li">
+                <a href="">
+                  Дневник P2P
+                </a>
+              </li>
+              <li class="burger-li">
+                <a href="#ex">
+                  Помощь
+                </a>
+              </li>
+              <li class="burger-li">
+                <button class="modalButton" onclick="toggleModal('#infoModal')">
+                  Вход
+                </button>
+              </li>
+            </ul>
+          </div>
+            
+        </div>  
+      </div>  
+             
+
+ 
+          </div>
+
+        </nav>
+    
+
+    <header class="header">
+      <div class="container">
+        <div class="header-wrap">
+          <div class="burger">
+                <i><svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="2" rx="1" fill="white"/>
+                <rect y="10" width="32" height="2" rx="1" fill="white"/>
+                <rect y="20" width="32" height="2" rx="1" fill="white"/>
+                </svg>
+            </i>
+                <i><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.277579 0.297221C0.647684 -0.0725583 1.24774 -0.0725583 1.61785 0.297221L21.7219 20.3836C22.092 20.7534 22.092 21.3529 21.7219 21.7227C21.3518 22.0924 20.7517 22.0924 20.3816 21.7227L0.277579 1.63631C-0.0925263 1.26653 -0.0925263 0.667001 0.277579 0.297221Z" fill="white"/>
+                <path d="M0.277589 21.7028C-0.092516 21.333 -0.0925161 20.7335 0.277589 20.3637L20.3816 0.277335C20.7517 -0.0924449 21.3518 -0.0924449 21.7219 0.277335C22.092 0.647114 22.092 1.24665 21.7219 1.61642L1.61786 21.7028C1.24775 22.0726 0.647694 22.0726 0.277589 21.7028Z" fill="white"/>
+                </svg>
+
+                </i> 
+              </div>
+          <div class="header-logo">
+            <a href="#">
+              <img src="images/logo.svg" alt="">
+            </a>
+          </div>
+          <div class="header-nav">
+            <ul class="header-ul" id="menu">
+              <li class="header-li">
+                <a href="#">
+                  Мониторинг предложений
+                </a>
+              </li>
+              <li class="header-li">
+                <a href="#">
+                  Дневник P2P
+                </a>
+              </li>
+              <li class="header-li">
+                <a href="#ex">Помощь</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-link">
+            <button class="modalButton" onclick="toggleModal('#infoModal')">
+              <img src="images/icon-profile.svg" alt="">
+              Вход
+            </button>
+          </div>
+        </div>
+        <div class="header-inner"></div>
+      </div>
+    </header>
+
+    <section class="forms">
+      <div class="container">
+        <div class="forms-wrap">
+          <div class="forms-block">
+            <div class="forms-title">
+              отдаёте
+            </div>
+            <div class="forms-content">
+              <div class="forms-fiat modalButton3" onclick="toggleModal3('#infoModal3')"></div>
+            </div>
+          </div>
+          <div class="forms-block2">
+            <div class="forms-button-arrow">
+              <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 20 22">
+                  <path d="M19 5H1M19 5L15 9M19 5L15 1M1 17H19M1 17L5 21M1 17L5 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+
+              </button>
+            </div>
+          </div>
+          <div class="forms-block">
+            <div class="forms-title">
+              получаете
+            </div>
+            <div class="forms-content">
+              <div class="forms-fiat modalButton3" onclick="toggleModal3('#infoModal3')"></div>
+            </div>
+          </div>
+          <div class="forms-block3">
+            <div class="forms-button-search">
+              <button>
+                <img src="images/search.svg" alt="">
+                <span>поиск</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="forms-inner">
+          <div class="forms-title">
+            Популярные направления
+          </div>
+          <div class="forms-buttons">
+            <div class="forms-button">
+              <button>RUB > USDT</button>
+            </div>
+            <div class="forms-button">
+              <button>RUB > BTC</button>
+            </div>
+            <div class="forms-button">
+              <button>USDT > RUB</button>
+            </div>
+            <div class="forms-button">
+              <button>BTC > RUB</button>
+            </div>
+          </div>
+        </div>
+        <div class="forms-restagle"></div>
+      </div>
+    </section>
+
+    <section class="tables">
+      <div class="container">
+        <div class="tables-title">
+          109 354
+        </div>
+        <div class="tables-suptitle">
+          Доступных предложений
+          <img src="images/checkmark.svg" alt="">
+        </div>
+        <div class="tables-tables">
+          <div class="tables-wrap">
+            <div class="tables-block">
+              <div class="tables-tables-title">
+                Платформа
+              </div>
+            </div>
+            <div class="tables-block">
+              <div class="tables-tables-title">
+                Кол-во предложений
+              </div>
+            </div>
+            <div class="tables-block">
+              <div class="tables-tables-title">
+                Доступный объём USDT
+              </div>
+            </div>
+            <div class="tables-block">
+              <div class="tables-tables-title">
+                Доступный объём RUB
+              </div>
+            </div>
+          </div>
+          <div class="tables-wrap">
+            <div class="tables-block2">
+              <div class="tables-tables-suptitle">
+                Binance
+              </div>
+            </div>
+            <div class="tables-block2">
+              <div class="tables-tables-suptitle">
+                73 569
+              </div>
+            </div>
+            <div class="tables-block2">
+              <div class="tables-tables-suptitle">
+                1 242 305 165 USDT
+              </div>
+            </div>
+            <div class="tables-block2">
+              <div class="tables-tables-suptitle">
+                8 935 731 258 RUB
+              </div>
+            </div>
+          </div>
+          <div class="tables-wrap2">
+            <div class="tables-block2">
+              <div class="tables-tables-suptitle">
+                Bitzlato
+              </div>
+            </div>
+            <div class="tables-block2">
+              <div class="tables-tables-suptitle">
+                10 853
+              </div>
+            </div>
+            <div class="tables-block2">
+              <div class="tables-tables-suptitle">
+                923 114 503 USDT
+              </div>
+            </div>
+            <div class="tables-block2">
+              <div class="tables-tables-suptitle">
+                126 965 701 RUB
+              </div>
+            </div>
+          </div>
+          <div class="tables-wrap">
+            <div class="tables-block2">
+              <div class="tables-tables-suptitle">
+                Okex
+              </div>
+            </div>
+            <div class="tables-block2">
+              <div class="tables-tables-suptitle">
+                9 365
+              </div>
+            </div>
+            <div class="tables-block2">
+              <div class="tables-tables-suptitle">
+                34 553 164 USDT
+              </div>
+            </div>
+            <div class="tables-block2">
+              <div class="tables-tables-suptitle">
+                2 314 532 RUB
+              </div>
+            </div>
+          </div>
+          <div class="tables-wrap2">
+            <div class="tables-block2">
+              <div class="tables-tables-suptitle">
+                Kucoin
+              </div>
+            </div>
+            <div class="tables-block2">
+              <div class="tables-tables-suptitle">
+                6 144
+              </div>
+            </div>
+            <div class="tables-block2">
+              <div class="tables-tables-suptitle">
+                2 274 420 274 USDT
+              </div>
+            </div>
+            <div class="tables-block2">
+              <div class="tables-tables-suptitle">
+                24 498 721 RUB
+              </div>
+            </div>
+          </div>
+          <div class="tables-wrap">
+            <div class="tables-block2">
+              <div class="tables-tables-suptitle">
+                Huobi
+              </div>
+            </div>
+            <div class="tables-block2">
+              <div class="tables-tables-suptitle">
+                5 082
+              </div>
+            </div>
+            <div class="tables-block2">
+              <div class="tables-tables-suptitle">
+                83 264 680 USDT
+              </div>
+            </div>
+            <div class="tables-block2">
+              <div class="tables-tables-suptitle">
+                8 345 043 RUB
+              </div>
+            </div>
+          </div>
+          <div class="tables-wrap2">
+            <div class="tables-block2">
+              <div class="tables-tables-suptitle">
+                Bybit
+              </div>
+            </div>
+            <div class="tables-block2">
+              <div class="tables-tables-suptitle">
+                4 397
+              </div>
+            </div>
+            <div class="tables-block2">
+              <div class="tables-tables-suptitle">
+                30 959 759 USDT
+              </div>
+            </div>
+            <div class="tables-block2">
+              <div class="tables-tables-suptitle">
+                2 315 124 RUB
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tables-accordion">
+          <div class="accordion2">
+            <div class="item2">
+            
+              <div class="text2">
+                <div class="item-text">
+                  <div class="item-text-title">Binance</div>
+                  <div class="item-text-suptitle">(70 039)</div>
+                </div>
+                <svg width="24" class="icon" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.7989 1.89933L11.8994 11.7988L1.99992 1.89933" stroke="#783AFA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              
+              <div class="hidden-box2">
+                <div class="tables-accordion-wrap">
+                  <div class="tables-accordion-block">
+                    <div class="tables-accordion-title">
+                      Объём USDT
+                    </div>
+                    <div class="tables-accordion-suptitle">
+                      1 166 414 526 USDT
+                    </div>
+                  </div>
+                  <div class="tables-accordion-block">
+                    <div class="tables-accordion-title">
+                      Объём RUB    
+                    </div>
+                    <div class="tables-accordion-suptitle">
+                      6 910 170 954 RUB
+                    </div>
+                  </div>
+                  <div class="tables-accordion-block">
+                    <div class="tables-accordion-title">
+                      Кол-во предложений
+                    </div>
+                    <div class="tables-accordion-suptitle">
+                      70 039
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item2">
+            
+              <div class="text2">
+                <div class="item-text">
+                  <div class="item-text-title">Binance</div>
+                  <div class="item-text-suptitle">(70 039)</div>
+                </div>
+                <svg width="24" class="icon" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.7989 1.89933L11.8994 11.7988L1.99992 1.89933" stroke="#783AFA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              
+              <div class="hidden-box2">
+                <div class="tables-accordion-wrap">
+                  <div class="tables-accordion-block">
+                    <div class="tables-accordion-title">
+                      Объём USDT
+                    </div>
+                    <div class="tables-accordion-suptitle">
+                      1 166 414 526 USDT
+                    </div>
+                  </div>
+                  <div class="tables-accordion-block">
+                    <div class="tables-accordion-title">
+                      Объём RUB    
+                    </div>
+                    <div class="tables-accordion-suptitle">
+                      6 910 170 954 RUB
+                    </div>
+                  </div>
+                  <div class="tables-accordion-block">
+                    <div class="tables-accordion-title">
+                      Кол-во предложений
+                    </div>
+                    <div class="tables-accordion-suptitle">
+                      70 039
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item2">
+            
+              <div class="text2">
+                <div class="item-text">
+                  <div class="item-text-title">Binance</div>
+                  <div class="item-text-suptitle">(70 039)</div>
+                </div>
+                <svg width="24" class="icon" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.7989 1.89933L11.8994 11.7988L1.99992 1.89933" stroke="#783AFA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              
+              <div class="hidden-box2">
+                <div class="tables-accordion-wrap">
+                  <div class="tables-accordion-block">
+                    <div class="tables-accordion-title">
+                      Объём USDT
+                    </div>
+                    <div class="tables-accordion-suptitle">
+                      1 166 414 526 USDT
+                    </div>
+                  </div>
+                  <div class="tables-accordion-block">
+                    <div class="tables-accordion-title">
+                      Объём RUB    
+                    </div>
+                    <div class="tables-accordion-suptitle">
+                      6 910 170 954 RUB
+                    </div>
+                  </div>
+                  <div class="tables-accordion-block">
+                    <div class="tables-accordion-title">
+                      Кол-во предложений
+                    </div>
+                    <div class="tables-accordion-suptitle">
+                      70 039
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item2">
+            
+              <div class="text2">
+                <div class="item-text">
+                  <div class="item-text-title">Binance</div>
+                  <div class="item-text-suptitle">(70 039)</div>
+                </div>
+                <svg width="24" class="icon" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.7989 1.89933L11.8994 11.7988L1.99992 1.89933" stroke="#783AFA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              
+              <div class="hidden-box2">
+                <div class="tables-accordion-wrap">
+                  <div class="tables-accordion-block">
+                    <div class="tables-accordion-title">
+                      Объём USDT
+                    </div>
+                    <div class="tables-accordion-suptitle">
+                      1 166 414 526 USDT
+                    </div>
+                  </div>
+                  <div class="tables-accordion-block">
+                    <div class="tables-accordion-title">
+                      Объём RUB    
+                    </div>
+                    <div class="tables-accordion-suptitle">
+                      6 910 170 954 RUB
+                    </div>
+                  </div>
+                  <div class="tables-accordion-block">
+                    <div class="tables-accordion-title">
+                      Кол-во предложений
+                    </div>
+                    <div class="tables-accordion-suptitle">
+                      70 039
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item2">
+            
+              <div class="text2">
+                <div class="item-text">
+                  <div class="item-text-title">Binance</div>
+                  <div class="item-text-suptitle">(70 039)</div>
+                </div>
+                <svg width="24" class="icon" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.7989 1.89933L11.8994 11.7988L1.99992 1.89933" stroke="#783AFA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              
+              <div class="hidden-box2">
+                <div class="tables-accordion-wrap">
+                  <div class="tables-accordion-block">
+                    <div class="tables-accordion-title">
+                      Объём USDT
+                    </div>
+                    <div class="tables-accordion-suptitle">
+                      1 166 414 526 USDT
+                    </div>
+                  </div>
+                  <div class="tables-accordion-block">
+                    <div class="tables-accordion-title">
+                      Объём RUB    
+                    </div>
+                    <div class="tables-accordion-suptitle">
+                      6 910 170 954 RUB
+                    </div>
+                  </div>
+                  <div class="tables-accordion-block">
+                    <div class="tables-accordion-title">
+                      Кол-во предложений
+                    </div>
+                    <div class="tables-accordion-suptitle">
+                      70 039
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item2">
+            
+              <div class="text2">
+                <div class="item-text">
+                  <div class="item-text-title">Binance</div>
+                  <div class="item-text-suptitle">(70 039)</div>
+                </div>
+                <svg width="24" class="icon" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.7989 1.89933L11.8994 11.7988L1.99992 1.89933" stroke="#783AFA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              
+              <div class="hidden-box2">
+                <div class="tables-accordion-wrap">
+                  <div class="tables-accordion-block">
+                    <div class="tables-accordion-title">
+                      Объём USDT
+                    </div>
+                    <div class="tables-accordion-suptitle">
+                      1 166 414 526 USDT
+                    </div>
+                  </div>
+                  <div class="tables-accordion-block">
+                    <div class="tables-accordion-title">
+                      Объём RUB    
+                    </div>
+                    <div class="tables-accordion-suptitle">
+                      6 910 170 954 RUB
+                    </div>
+                  </div>
+                  <div class="tables-accordion-block">
+                    <div class="tables-accordion-title">
+                      Кол-во предложений
+                    </div>
+                    <div class="tables-accordion-suptitle">
+                      70 039
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="fag" id="ex">
+      <div class="container">
+        <div class="fag-title-center">
+          <div class="fag-title">
+            FAQ
+          </div>
+        </div>
+        <div class="fag-accordion">
+          <div class="accordion">
+            <div class="item">
+            
+              <p class="text">1. Как пользоваться?
+                <svg width="26" class="icon" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.1777 12L0.177734 12" stroke="#783AFA"/>
+                <path d="M12.1777 0V25" stroke="#783AFA"/>
+                </svg>
+              </p>
+              
+              <div class="hidden-box">
+                <div class="accordion-suptitle">
+                  Пользователь вводит в поле «отдаете» национальную валюту страны (например, RUB – российский рубль), в поле «получаете» – желаемую криптовалюту (например, BTC – биткойн). <br><br>После нажатия «искать предложения» выводятся все предложения по желаемой криптовалюте за указанную национальную валюту. При нажатии на конкретное предложение пользователь переходит на cтраницу с этим предложением на P2P-платформе или частном обменнике.
+                </div>
+              </div>
+            </div>
+            <div class="item">
+            
+              <p class="text">
+                2. Что делает сервис?
+                <svg width="26" class="icon" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.1777 12L0.177734 12" stroke="#783AFA"/>
+                <path d="M12.1777 0V25" stroke="#783AFA"/>
+                </svg>
+              </p>
+              
+              <div class="hidden-box">
+                <div class="accordion-suptitle">
+                  Lorem ipsum...
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+            
+              <p class="text">
+                3. Я хотел бы сотрудничать с вами.
+                <svg width="26" class="icon" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.1777 12L0.177734 12" stroke="#783AFA"/>
+                <path d="M12.1777 0V25" stroke="#783AFA"/>
+                </svg>
+              </p>
+              
+              <div class="hidden-box">
+                <div class="accordion-suptitle">
+                  Lorem ipsum...
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrap">
+          <div class="footer-logo">
+            <a href="#">
+              <img src="images/logo.svg" alt="">
+            </a>
+          </div>
+          <div class="footer-text">
+            <div class="footer-title">
+              <span>109 354</span> доступных предложения
+            </div>
+            <div class="footer-suptitle">
+              «RBOTS» © 2022
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <div id="infoModal" class="modal">
+        <div class="modalHeader">
+          
+        <div class="modalCloseButton">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L13 13" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M13 1L1.00001 13" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modalContent">
+          
+
+          <div class="modal-block">
+            <div class="modal-title">
+              Добро<br>пожаловать
+            </div>
+            <div class="modal-suptitle">
+              Пожалуйста авторизируйтесь
+            </div>
+            <div class="modal-input">
+              <input type="text" size="40" placeholder="Введите логин">
+            </div>
+            <div class="modal-input">
+              <input type="text" size="40" placeholder="Введите пароль">
+            </div>
+            <div class="modal-link">
+              <a href="#">Забыли пароль?</a>
+            </div>
+            <div class="modal-button">
+              <button>Войти</button>
+            </div>
+            <div class="modal-button2">
+              <button class="modalButton2" onclick="toggleModal2('#infoModal2')">Зарегистрироваться</button>
+            </div>
+          </div>
+          
+          
+        </div>
+    </div>
+
+
+    <div id="infoModal2" class="modal2">
+        <div class="modalHeader2">
+          
+        <div class="modalCloseButton2">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L13 13" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M13 1L1.00001 13" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modalContent2">
+          
+
+          <div class="modal-block">
+            <div class="modal-title">
+              Регистрация
+            </div>
+            <div class="modal-register-link">
+              <a href="#">
+                <img src="images/arrowBack.svg" alt="">
+                 Вернуться
+               </a>
+            </div>
+            <div class="modal-wrap">
+              <div class="modal-wrap-block">
+                <div class="modal-input">
+                  <input type="text" size="40" placeholder="Введите логин">
+                </div>
+              </div>
+              <div class="modal-wrap-block">
+                <div class="modal-input">
+                  <input type="text" size="40" placeholder="Введите email">
+                </div>
+              </div>
+              <div class="modal-wrap-block">
+                <div class="modal-input">
+                  <input type="text" size="40" placeholder="Введите пароль">
+                </div>
+              </div>
+              <div class="modal-wrap-block">
+                <div class="modal-input">
+                  <input type="text" size="40" placeholder="Повторите пароль">
+                </div>
+              </div>
+              <div class="modal-wrap-block">
+                
+              </div>
+              <div class="modal-wrap-block">
+                <div class="modal-button">
+                  <button>Зарегистрироваться</button>
+                </div>
+              </div>
+            </div>
+            
+           
+            
+            
+            
+          </div>
+          
+          
+        </div>
+    </div>
+
+
+
+    <div id="infoModal3" class="modal3">
+        <div class="modalHeader3">
+          
+        <div class="modalCloseButton3">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L13 13" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M13 1L1.00001 13" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modalContent3">
+          
+
+          <div class="modal-block">
+            <div class="modal-title">
+              Выбор валюты
+            </div>
+            
+            <div class="modal-inner">
+              <div class="modal-inner-block">
+                <div class="modal-inner-input">
+                  <input type="text" size="40" placeholder="Поиск">
+                </div>
+                <div class="modal-category">
+                  <div class="modal-category-title">
+                    Категории:
+                  </div>
+                  <ul class="modal-category-ul">
+                    <li class="modal-category-li">
+                      криптовалюты
+                    </li>
+                    <li class="modal-category-li">
+                      Валюта
+                    </li>
+                    <li class="modal-category-li">
+                      Все
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="modal-inner-block2">
+                <div class="modal-inner-title">
+                  Криптовалюты:
+                </div>
+                <div class="modal-valet">
+                  <div class="modal-valet-choise">
+                    SLP
+                  </div>
+                  <div class="modal-valet-choise">
+                    SLP
+                  </div>
+                  <div class="modal-valet-choise">
+                    SLP
+                  </div>
+                  <div class="modal-valet-choise">
+                    SLP
+                  </div>
+                  <div class="modal-valet-choise">
+                    SLP
+                  </div>
+                  <div class="modal-valet-choise">
+                    SLP
+                  </div>
+                  <div class="modal-valet-choise">
+                    SLP
+                  </div>
+                  <div class="modal-valet-choise">
+                    SLP
+                  </div>
+                  <div class="modal-valet-choise">
+                    SLP
+                  </div>
+                  <div class="modal-valet-choise">
+                    SLP
+                  </div>
+                  <div class="modal-valet-choise">
+                    SLP
+                  </div>
+                  <div class="modal-valet-choise">
+                    SLP
+                  </div>
+
+                  <div class="modal-valet-choise">
+                    SLP
+                  </div>
+                  <div class="modal-valet-choise">
+                    SLP
+                  </div>
+                  <div class="modal-valet-choise">
+                    SLP
+                  </div>
+
+                  <div class="modal-valet-choise">
+                    SLP
+                  </div>
+                  <div class="modal-valet-choise">
+                    SLP
+                  </div>
+                  <div class="modal-valet-choise">
+                    SLP
+                  </div>
+
+                  <div class="modal-valet-choise">
+                    SLP
+                  </div>
+                  <div class="modal-valet-choise">
+                    SLP
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+    </div>
+    
+   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+  </body>
+
+  
+</html>
